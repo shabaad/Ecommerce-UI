@@ -112,7 +112,13 @@ class ShopDetails extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Material Pickup & Delivery Available'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Material Pickup & Delivery Available'),
+                  Icon(Icons.reviews)
+                ],
+              ),
               Icon(
                 Icons.message,
               )
@@ -154,27 +160,27 @@ class ShopDetails extends StatelessWidget {
                       Icon(
                         Icons.star_border,
                         size: 20,
-                        color: Colors.orange,
+                        color: kOrangeColor,
                       ),
                       Icon(
                         Icons.star_border,
                         size: 20,
-                        color: Colors.orange,
+                        color: kOrangeColor,
                       ),
                       Icon(
                         Icons.star_border,
                         size: 20,
-                        color: Colors.orange,
+                        color: kOrangeColor,
                       ),
                       Icon(
                         Icons.star_border,
                         size: 20,
-                        color: Colors.orange,
+                        color: kOrangeColor,
                       ),
                       Icon(
                         Icons.star_border,
                         size: 20,
-                        color: Colors.orange,
+                        color: kOrangeColor,
                       ),
                       SizedBox(
                         width: 10,
@@ -184,10 +190,26 @@ class ShopDetails extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
@@ -196,9 +218,21 @@ class ShopDetails extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
@@ -207,8 +241,16 @@ class ShopDetails extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Icon(Icons.star_border),
-                      Icon(Icons.star_border),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
@@ -217,7 +259,11 @@ class ShopDetails extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Icon(Icons.star_border),
+                      Icon(
+                        Icons.star_border,
+                        size: 20,
+                        color: kOrangeColor,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
@@ -236,7 +282,10 @@ class ShopDetails extends StatelessWidget {
                         child: Row(
                           children: [
                             Icon(Icons.reviews),
-                            Text('Write a Review')
+                            Text(
+                              'Write a Review',
+                              style: TextStyle(color: kOrangeColor),
+                            )
                           ],
                         ),
                       ),
@@ -251,9 +300,12 @@ class ShopDetails extends StatelessWidget {
                 children: [
                   Text(
                     '4.3',
-                    style: TextStyle(fontSize: 50),
+                    style: TextStyle(fontSize: 50, color: Colors.green),
                   ),
-                  Text('54 Rating'),
+                  Text(
+                    '54 Rating',
+                    style: TextStyle(color: Colors.green),
+                  ),
                   SizedBox(
                     height: 42,
                   ),
@@ -290,27 +342,27 @@ class ShopDetails extends StatelessWidget {
                         Icon(
                           Icons.star_border,
                           size: 15,
-                          color: Colors.orange,
+                          color: kOrangeColor,
                         ),
                         Icon(
                           Icons.star_border,
                           size: 15,
-                          color: Colors.orange,
+                          color: kOrangeColor,
                         ),
                         Icon(
                           Icons.star_border,
                           size: 15,
-                          color: Colors.orange,
+                          color: kOrangeColor,
                         ),
                         Icon(
                           Icons.star_border,
                           size: 15,
-                          color: Colors.grey,
+                          color: kGreyColor,
                         ),
                         Icon(
                           Icons.star_border,
                           size: 15,
-                          color: Colors.grey,
+                          color: kGreyColor,
                         ),
                       ]),
                     ],
