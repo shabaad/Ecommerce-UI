@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/colors.dart';
+import 'package:ecommerce_app/views/widgets/order_details/status_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:dotted_line/dotted_line.dart';
 
@@ -40,7 +41,7 @@ class OrderStatus extends StatelessWidget {
           ),
         ),
         Container(
-          width: 315,
+          width: 285,
           height: 300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -64,8 +65,7 @@ class OrderStatus extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Icon(Icons.toggle_off_outlined,
-                      size: 50, color: Colors.orange),
+                  StatusIcon()
                 ],
               ),
               Row(
@@ -84,10 +84,7 @@ class OrderStatus extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Icon(
-                    Icons.toggle_off,
-                    size: 50,
-                  ),
+                  StatusIcon()
                 ],
               ),
               Row(
@@ -103,10 +100,7 @@ class OrderStatus extends StatelessWidget {
                       Text('Date : 12/10/2021 - 10:05am', style: kGreyStyle),
                     ],
                   ),
-                  Icon(
-                    Icons.toggle_off,
-                    size: 50,
-                  ),
+                  StatusIcon()
                 ],
               ),
               Row(
@@ -123,10 +117,7 @@ class OrderStatus extends StatelessWidget {
                       Text('Date : 12/10/2021 - 10:05am', style: kGreyStyle),
                     ],
                   ),
-                  Icon(
-                    Icons.toggle_off,
-                    size: 50,
-                  ),
+                  StatusIcon()
                 ],
               ),
               Row(
@@ -145,10 +136,7 @@ class OrderStatus extends StatelessWidget {
                       Text('Date : 12/10/2021 - 10:05am', style: kGreyStyle),
                     ],
                   ),
-                  Icon(
-                    Icons.toggle_off,
-                    size: 50,
-                  ),
+                  StatusIcon()
                 ],
               ),
             ],

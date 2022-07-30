@@ -21,7 +21,10 @@ class OrderPageAppBar extends StatelessWidget {
             ),
           ),
         ),
-        Text('Order Details - ORD123123'),
+        Text(
+          'Order Details - ORD123123',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

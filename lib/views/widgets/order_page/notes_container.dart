@@ -35,11 +35,17 @@ class NotesContainer extends StatelessWidget {
             Text('Vendor Notes for Tailor'),
             Row(
               children: [
-                Icon(Icons.share),
+                Icon(
+                  Icons.share,
+                  color: Colors.blue,
+                ),
                 SizedBox(
                   width: 8,
                 ),
-                Icon(Icons.read_more)
+                Icon(
+                  Icons.read_more,
+                  color: Colors.blue,
+                )
               ],
             )
           ],

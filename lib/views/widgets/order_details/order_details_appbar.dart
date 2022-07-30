@@ -23,7 +23,10 @@ class OrderDetailsAppbar extends StatelessWidget {
         SizedBox(
           width: 80,
         ),
-        Text('Order Details - ORD123123')
+        Text(
+          'Order Details - ORD123123',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        )
       ],
     );
   }

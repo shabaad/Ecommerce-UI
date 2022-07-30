@@ -45,8 +45,11 @@ class ShopDetails extends StatelessWidget {
               Row(
                 children: [
                   Icon(
-                    Icons.star_border,
+                    Icons.star,
                     color: kOrangeColor,
+                  ),
+                  SizedBox(
+                    width: 5,
                   ),
                   Text('3.2')
                 ],
@@ -115,12 +118,15 @@ class ShopDetails extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Material Pickup & Delivery Available'),
-                  Icon(Icons.reviews)
+                  Text(
+                    'Material Pickup & Delivery Available',
+                    style: kGreyStyle,
+                  ),
                 ],
               ),
               Icon(
-                Icons.message,
+                Icons.reviews,
+                color: kOrangeColor,
               )
             ],
           ),
@@ -157,117 +163,75 @@ class ShopDetails extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
+                      for (var i = 0; i < 5; i++)
+                        Icon(
+                          Icons.star,
+                          size: 20,
+                          color: kOrangeColor,
+                        ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('08'),
+                      Text(
+                        '14',
+                        style: kGreyStyle,
+                      )
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
+                      for (var i = 0; i < 4; i++)
+                        Icon(
+                          Icons.star,
+                          size: 20,
+                          color: kOrangeColor,
+                        ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('16'),
+                      Text('08', style: kGreyStyle)
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
+                      for (var i = 0; i < 3; i++)
+                        Icon(
+                          Icons.star,
+                          size: 20,
+                          color: kOrangeColor,
+                        ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('08'),
+                      Text('06', style: kGreyStyle)
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
+                      for (var i = 0; i < 2; i++)
+                        Icon(
+                          Icons.star,
+                          size: 20,
+                          color: kOrangeColor,
+                        ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('02'),
+                      Text('02', style: kGreyStyle)
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(
-                        Icons.star_border,
-                        size: 20,
-                        color: kOrangeColor,
-                      ),
+                      for (var i = 0; i < 1; i++)
+                        Icon(
+                          Icons.star,
+                          size: 20,
+                          color: kOrangeColor,
+                        ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('01'),
+                      Text('01', style: kGreyStyle)
                     ],
                   ),
                   SizedBox(
@@ -281,7 +245,10 @@ class ShopDetails extends StatelessWidget {
                             border: Border.all(color: Colors.orange)),
                         child: Row(
                           children: [
-                            Icon(Icons.reviews),
+                            Icon(
+                              Icons.add,
+                              color: kOrangeColor,
+                            ),
                             Text(
                               'Write a Review',
                               style: TextStyle(color: kOrangeColor),
@@ -300,11 +267,16 @@ class ShopDetails extends StatelessWidget {
                 children: [
                   Text(
                     '4.3',
-                    style: TextStyle(fontSize: 50, color: Colors.green),
+                    style: TextStyle(
+                        fontSize: 50,
+                        color: Colors.green,
+                        fontWeight: FontWeight.bold),
                   ),
                   Text(
                     '54 Rating',
-                    style: TextStyle(color: Colors.green),
+                    style: TextStyle(
+                      color: Colors.green,
+                    ),
                   ),
                   SizedBox(
                     height: 42,
@@ -338,33 +310,22 @@ class ShopDetails extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('John William'),
-                      Row(children: [
-                        Icon(
-                          Icons.star_border,
-                          size: 15,
-                          color: kOrangeColor,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          size: 15,
-                          color: kOrangeColor,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          size: 15,
-                          color: kOrangeColor,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          size: 15,
-                          color: kGreyColor,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          size: 15,
-                          color: kGreyColor,
-                        ),
-                      ]),
+                      Row(
+                        children: [
+                          for (var i = 0; i < 3; i++)
+                            Icon(
+                              Icons.star,
+                              size: 15,
+                              color: kOrangeColor,
+                            ),
+                          for (var i = 0; i < 2; i++)
+                            Icon(
+                              Icons.star,
+                              size: 15,
+                              color: kGreyColor,
+                            ),
+                        ],
+                      ),
                     ],
                   ),
                 ],

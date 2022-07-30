@@ -2,8 +2,7 @@ import 'package:ecommerce_app/provider/show_hide.dart';
 import 'package:ecommerce_app/views/widgets/order_details/dummy_product_container.dart';
 import 'package:ecommerce_app/views/widgets/order_details/item_container.dart';
 import 'package:ecommerce_app/views/widgets/order_details/order_details_appbar.dart';
-import 'package:ecommerce_app/views/widgets/order_details/order_status.dart';
-import 'package:ecommerce_app/views/widgets/order_page/product_container.dart';
+
 import 'package:ecommerce_app/views/widgets/order_page/user_container.dart';
 import 'package:ecommerce_app/views/widgets/shop_page/divider.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +43,7 @@ class OrderDetailsPage extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            Consumer<TabToggle>(builder: (context, appData, child) {
+            Consumer<TabToggle>(builder: (context1, appData, child) {
               return ItemContainer(
                 text: "Item 1",
               );

@@ -47,6 +47,7 @@ class PickUpContainer extends StatelessWidget {
               children: [
                 Icon(
                   Icons.reviews,
+                  color: Colors.blue,
                   size: 15,
                 ),
               ],

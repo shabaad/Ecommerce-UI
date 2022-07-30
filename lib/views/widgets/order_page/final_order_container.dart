@@ -55,7 +55,13 @@ class FinalOrderContainer extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [Text('Total Amount'), Text('805.00')],
+            children: [
+              Text(
+                'Total Amount',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Text('805.00', style: TextStyle(fontWeight: FontWeight.bold))
+            ],
           ),
         ],
       ),

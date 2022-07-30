@@ -1,4 +1,6 @@
 import 'package:ecommerce_app/provider/icon_change.dart';
+import 'package:ecommerce_app/provider/show_all.dart';
+
 import 'package:ecommerce_app/provider/show_hide.dart';
 import 'package:ecommerce_app/views/order_details_page.dart';
 import 'package:ecommerce_app/views/order_page.dart';
@@ -15,8 +17,11 @@ void main() {
       ChangeNotifierProvider(
         create: (context) => IconToggle(),
       ),
+      ChangeNotifierProvider(
+        create: (context) => ShowAll(),
+      ),
     ],
-    child: MyApp(),
+    child: const MyApp(),
   ));
 }
 
@@ -26,17 +31,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Ecommerce task',
-      initialRoute: '/firstScreen',
       routes: {
-        '/firstScreen': (context) => const ShopPage(),
         '/secondScreen': (context) => OrderPage(),
         '/thirdScreen': (context) => const OrderDetailsPage(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: OrderDetailsPage(),
+      home: ShopPage(),
     );
   }
 }

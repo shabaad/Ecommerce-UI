@@ -20,7 +20,10 @@ class OrderPageContainer extends StatelessWidget {
       padding: const EdgeInsets.all(12.0),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: Colors.blue)),
+          border: Border.all(
+            width: 0.5,
+            color: Colors.indigoAccent,
+          )),
       child: containerChild,
     );
   }

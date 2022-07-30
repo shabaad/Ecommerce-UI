@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/core/colors.dart';
 import 'package:ecommerce_app/views/widgets/order_details/dummy_product_container.dart';
 import 'package:ecommerce_app/views/widgets/order_page/addon_container.dart';
 import 'package:ecommerce_app/views/widgets/order_page/appointment_container.dart';
@@ -68,7 +69,7 @@ class OrderPage extends StatelessWidget {
                         SizedBox(
                           height: 8,
                         ),
-                        ExpandableText(),
+                        AddOnContainer(),
                         SizedBox(
                           height: 10,
                         ),
@@ -85,7 +86,7 @@ class OrderPage extends StatelessWidget {
                   title: 'Vendor Notes for tailor',
                   kHeight: 30,
                   kWidth: double.infinity,
-                  kColor: Colors.orange,
+                  kColor: kOrangeColor,
                   kFontSize: 15,
                 ),
                 SizedBox(

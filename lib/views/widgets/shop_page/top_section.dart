@@ -49,9 +49,14 @@ class TopSection extends StatelessWidget {
                             Icons.store,
                             color: kWhiteColor,
                           ),
+                          SizedBox(
+                            width: 5,
+                          ),
                           Text(
                             'Shop Name',
-                            style: kWhiteStyle,
+                            style: TextStyle(
+                                color: kWhiteColor,
+                                fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
@@ -61,6 +66,9 @@ class TopSection extends StatelessWidget {
                         Icon(
                           Icons.navigation,
                           color: kWhiteColor,
+                        ),
+                        SizedBox(
+                          width: 5,
                         ),
                         Text(
                           'Johnson Road, T.Nagar',
