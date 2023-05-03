@@ -26,7 +26,7 @@ class ShopPage extends StatelessWidget {
                 children: [
                   ShopImages(),
                   SizedBox(
-                    height: screenSize.height * .07,
+                    height: screenSize.height * .08,
                   ),
                 ],
               ),
